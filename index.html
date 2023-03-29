@@ -3,98 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-
-    <title>A2F Software Technologies</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2F Software</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1> <span class="highlight" href="#">A2F Software Technologies</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="service.html">Service</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">A2F Software Technologies</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contcat</a>
+        </nav>
     </header>
 
-    <section id="showcase">
-        <div class="container">
-            <h1 style= "margin-top: 0; padding: 0;">
-                <img src="./img/LOGO.png" style=" max-width: 95%;
-                max-height: 95%; margin-top: 0; padding: 0;" >
-            </h1>
+    <!--  Home Section Design  -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Its me</h3>
+            <h1>Ajay Tekam</h1>
+            <h3>And I'm a <span>DevOps Engineer</span></h3>
+            <p>This is some text data to test out all the things which i am intended to.</p>
+            <p>write something Giberish because i have to fillup the space to look.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a> 
+        </div>
+
+        <div class="home-img">
+            <img src="images/logo.png" alt="">
         </div>
     </section>
 
-    <section id="newslatter">
-        <div class="container">
-            <h1>
-                Servises
-            </h1>
-            <form>
-                <input type="email" placeholder="Enterm email">
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
+    <!-- about section design -->  
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>DevOps Engineer</h3>
+            <p>This is some text data to test out all the things which i am intended to.   
+            This is some text data to test out all the things which i am intended to.   
+            This is some text data to test out all the things which i am intended to.</p>
+            <a href="#" class="btn">Read More</a>
         </div>
     </section>
 
-    <section id="boxes">
-        <div class="container">
-            <div class="box">
-                <img src="./img/image_3.png" >
-                <h3>Web Devlopment</h3>
-                <p>
-                    Creating a website that is apt, sophisticated, and delivers what is required is our strong point. <a href="service.html">More.</a>
-                </p>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Applications</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="box">
-                <img src="./img/image_5.png" >
-                <h3>Application Devlopment</h3>
-                <p>
-                    Advent of smartphones and mobile technology has indeed changed the digital landscape to the highest extent possible.<a href="service.html">More.</a>
-                </p>
+
+            <div class="services-box">
+                <i class='bx bxl-android'></i>
+                <h3>Mobile Apps</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="box">
-                <img src="./img/image_4.png" >
-                <h3>Landing Page Development</h3>
-                <p>
-                    It all boils down to giving an apt identity to your business on the website.<a href="service.html">More.</a>
-                </p>
+
+            <div class="services-box">
+                <i class='bx bxl-graphql'></i>
+                <h3>API Development</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="box">
-                <img src="./img/hosting.png" >
-                <h3>Domain & Hosting</h3>
-                <p>
-                    It all boils down to giving an apt identity to your business on the website. <a href="service.html">More.</a>
-                </p>
+
+            <div class="services-box">
+                <i class='bx bx-desktop' ></i>
+                <h3>Desktop Applications</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="box">
-                <img src="./img/image_1.png" >
-                <h3>API Devlopment & Intigration</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="service.html">More.</a>
-                </p>
+
+            <div class="services-box">
+                <i class='bx bx-bot' ></i>
+                <h3>Bot Development</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-cloud' ></i>
+                <h3>Cloud Services</h3>
+                <p>This is some text data to test out all the things which i am intended to.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <P>
-            A2F Software Technologies, Copyright & Copy, 2023
-        </P>
-    </footer>
+    <!-- Portfolio Applications -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            
+            <div class="portfolio-box">
+                <img src="images/website_project.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Developement</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/mobile.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Mobile App</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/desktop_project.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Desktop App</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/api_project.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>API Development</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/bot_project.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Bot Developement</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/cloud-computing.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Cloud Services</h4>
+                    <p>This is some text data to test out all the things which i am intended to.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
