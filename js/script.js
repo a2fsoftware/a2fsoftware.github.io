@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
 /*========== typed js ============*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Applicaitons', 'Android Applicatons', 'IOS Applcations', 'Desktop Applications', 'API Development', 'API Integration', 'Domain names and Hosting', 'Cloud Services (AWS, Azure)', 'Cloud Migrations','DevOps and Automattion', 'Bot Development'],
+    strings: ['Web Applications', 'Android Applications', 'IOS Applications', 'Desktop Applications', 'API Development', 'API Integration', 'Domain names and Hosting', 'Cloud Services (AWS, Azure)', 'Cloud Migrations','DevOps and Automation', 'Bot Development'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
