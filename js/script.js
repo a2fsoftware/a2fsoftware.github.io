@@ -60,24 +60,45 @@ const typed = new Typed('.multiple-text', {
 
 /* =========== EmailJS Automation code ============= */
 function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        subject: document.getElementById("subject").value,
-        email: document.getElementById("email").value,
-        ph_number: document.getElementById("ph_number").value,
-        message: document.getElementById("message").value
-    };
 
-    const serviceID = "service_sk7xsn2";
-    const templateID = "template_fh78ycd"; 
+    //check for the length of box
+    var_name = document.getElementById("name").value,
+    var_subject = document.getElementById("subject").value,
+    var_email = document.getElementById("email").value,
+    var_ph_number = document.getElementById("ph_number").value,
+    var_message = document.getElementById("message").value
 
-    emailjs.send(serviceID, templateID, params).then((res) => {
-        document.getElementById("name").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("ph_number").value = "";
-        document.getElementById("message").value = "";
-        console.log(res);
-        alert("Your message sent successfully");
-    }).catch((err) => console.log(err));
+    if (var_name.length === 0) {
+        alert("Please fillup the Name Field");
+    } else if (var_subject.length === 0) {
+        alert("Please fillup the Subject Field");
+    } else if (var_email.length === 0) {
+        alert("Please fillup the Email Field");
+    } else if (var_ph_number.length === 0) {
+        alert("Please fillup the phone number Field");
+    } else if (var_message.length === 0) {
+        alert("Please fillup the Message Field"); 
+    } else {
+        // everything is ok
+        var params = {
+            name: var_name,
+            subject: var_subject,
+            email: var_email,
+            ph_number: var_ph_number,
+            message: var_message
+        };
+
+        const serviceID = "service_sk7xsn2";
+        const templateID = "template_fh78ycd"; 
+
+        emailjs.send(serviceID, templateID, params).then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("ph_number").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent successfully");
+        }).catch((err) => console.log(err));
+    }
 }
